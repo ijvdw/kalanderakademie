@@ -4,6 +4,7 @@ import { About } from './pages/about';
 import { Services } from './pages/services';
 import { Schedule } from './pages/schedule';
 import { Contact } from './pages/contact';
+import { NotFound } from './pages/not-found';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -11,5 +12,5 @@ export const routes: Routes = [
   { path: 'services', component: Services },
   { path: 'schedule', component: Schedule },
   { path: 'contact', component: Contact },
-  { path: '**', redirectTo: '' },
+  { path: '**', component: NotFound },
 ];

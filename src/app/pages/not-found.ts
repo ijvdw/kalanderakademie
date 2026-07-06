@@ -3,15 +3,15 @@ import { Title } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-not-found',
   imports: [RouterLink],
-  templateUrl: './home.html',
-  styleUrl: './home.scss',
+  templateUrl: './not-found.html',
+  styleUrl: './not-found.scss',
 })
-export class Home implements OnInit {
+export class NotFound implements OnInit {
   constructor(private title: Title) {}
 
   ngOnInit() {
-    this.title.setTitle('Kalander - After-school Support & Learning Centre in George');
+    this.title.setTitle('404 - Page Not Found | Kalander');
   }
 }

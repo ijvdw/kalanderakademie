@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,4 +8,10 @@ import { RouterLink } from '@angular/router';
   templateUrl: './services.html',
   styleUrl: './services.scss',
 })
-export class Services {}
+export class Services implements OnInit {
+  constructor(private title: Title) {}
+
+  ngOnInit() {
+    this.title.setTitle('Our Services - Kalander, George');
+  }
+}
