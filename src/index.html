@@ -17,6 +17,15 @@
     <meta name="robots" content="index, follow" />
   </head>
   <body>
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.pathname + location.search) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <app-root></app-root>
   </body>
 </html>
