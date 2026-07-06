@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
   workflow_dispatch:
 
@@ -25,7 +25,7 @@ jobs:
           node-version: 20
           cache: "npm"
       - run: npm ci
-      - run: npx ng build --configuration production --base-href=/
+      - run: npx ng build --configuration production --base-href=/kalanderakademie/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist/kalander
