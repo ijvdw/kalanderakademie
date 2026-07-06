@@ -1,0 +1,44 @@
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.schedule-card h2 {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.schedule-card p {
+  color: #6b6560;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.note {
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 0.75rem;
+  opacity: 0.8;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table td {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem;
+}
+
+.schedule-table td:last-child {
+  text-align: right;
+  color: #6b6560;
+}
+
+.schedule-table tr:last-child td {
+  border-bottom: none;
+}
