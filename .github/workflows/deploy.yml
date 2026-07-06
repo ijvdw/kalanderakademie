@@ -22,5 +22,5 @@ jobs:
       - run: npx ng build --configuration production --base-href=/kalanderakademie/
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist/kalander
+          folder: dist/kalander/browser
           branch: gh-pages
